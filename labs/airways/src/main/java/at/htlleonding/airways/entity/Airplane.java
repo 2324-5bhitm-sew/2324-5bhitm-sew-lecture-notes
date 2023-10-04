@@ -1,14 +1,25 @@
 package at.htlleonding.airways.entity;
 
 
+import io.quarkus.security.IdentityAttribute;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.time.LocalDate;
 
+@Entity
 public class Airplane {
 
-private String name;
-private LocalDate inServiceDate;
-private String brand;
-private String model;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    private LocalDate inServiceDate;
+    private String brand;
+    private String model;
 
 
     public Airplane() {
@@ -22,6 +33,16 @@ private String model;
     }
 
     //region getter and setter
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -55,4 +76,15 @@ private String model;
     }
     //endregion
 
+
+    @Override
+    public String toString() {
+        return "Airplane{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", inServiceDate=" + inServiceDate +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
