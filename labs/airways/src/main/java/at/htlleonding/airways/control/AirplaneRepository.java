@@ -1,6 +1,11 @@
 package at.htlleonding.airways.control;
 
-public class AirplaneRepository {
+import at.htlleonding.airways.entity.Airplane;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class AirplaneRepository implements PanacheRepository<Airplane> {
 
 
 
