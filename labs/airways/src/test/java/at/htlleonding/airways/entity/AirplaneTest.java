@@ -23,3 +23,4 @@ class AirplaneTest {
                 .doesNotContainNull()
                 .containsExactly("Mozart", LocalDate.of(2023, Month.SEPTEMBER, 28));
     }
+}
