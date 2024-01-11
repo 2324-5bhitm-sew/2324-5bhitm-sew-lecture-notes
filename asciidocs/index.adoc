@@ -88,6 +88,7 @@ https://edufs.edu.htl-leonding.ac.at/moodle/course/view.php?id=4117#[Link zum Cl
 
 |===
 
+
 == 2023-12-07 (Mitschrift Eder)
 
 * Besprechung der Probleme bei gehaltenen Referaten im Fach MEDT
@@ -111,6 +112,33 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 
 
 
+
+=======
+== 2023-12-21
+// contribution by Elias Just
+=== Patterns
+- https://www.digitalocean.com/community/tutorials/builder-design-pattern-in-java[Builder pattern]: Es wird immer das gleiche Objekt zurückgegeben
+- Factory Pattern
+
+=== https://www.baeldung.com/java-unit-testing-best-practices#[Best Practices]
+==== Tests
+- Tests sollen so klein wie möglich sein
+- Tests müssen **unabhängig** voneinander sein: Annotation **TestTransaction**
+- keine productions Methoden: AssertJDB
+- Testabdeckung muss passen: https://www.jacoco.org/jacoco/trunk/index.html
+- Test Abdeckung soll auch in der Pipeline funktionieren
+- keine Literale
+
+==== **Mocking**
+- https://site.mockito.org[mockito]
+- http://jmock.org[jmock]
+
+=== Testplan
+- Title/ Description
+. aus welchen Grund testet man also welche Teststrategie
+- Expected Result
+
+💡 Datenbankintegrität: **Zuverlässigkeit und Vertrauenswürdigkeit von Daten während ihres gesamten Lebenszyklus wird gewährleistet**.
 
 
 
