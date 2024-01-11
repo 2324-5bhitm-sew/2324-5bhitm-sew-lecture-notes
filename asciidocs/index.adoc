@@ -78,7 +78,7 @@ https://edufs.edu.htl-leonding.ac.at/moodle/course/view.php?id=4117#[Link zum Cl
 |ermöglicht eine bidirektionale Kommunikation zwischen Server und Client im zustandslosen TCP/IP.
 
 |SSE
-|Server-sent-events, vglbar mit Websocket, aller dings nur für kurze Textnachrichten und keinen binären Datenaustausch
+|Server-sent-events, vglbar. mit Websocket, aller dings nur für kurze Textnachrichten und keinen binären Datenaustausch
 
 |validieren
 |auf Gültigkeit prüfen
@@ -88,6 +88,32 @@ https://edufs.edu.htl-leonding.ac.at/moodle/course/view.php?id=4117#[Link zum Cl
 
 |===
 
+
+== 2023-12-07 (Mitschrift Eder)
+
+* Besprechung der Probleme bei gehaltenen Referaten im Fach MEDT
+* Besprechung des Ergebnisses des ITP-Tests
+** Verbesserung des Tests bis zum 09.12.23 siehe https://edufs.edu.htl-leonding.ac.at/moodle/pluginfile.php/225272/mod_resource/content/1/kommentare.html[Kommentare]
+* Besprechung des Stoffs für den zweiten SEW-Test
+** Algorithmus oder eine Ermittlung des Break-Even-Points
+** Datenstruktur
+** Mögliche Themen: Betriebswirtschaft, Weihnachten, Mathematik oder Geschichte
+* Besprechung von der ersten Versionen der ITP-Videos für den Tag der offenen Tür.
+** Logo der HTL nur klein einblenden
+** Schnell geschnitten, ähnlich wie Rückblendungen
+** Eine Botschaft des Projekts miteinbauen
+
+
+Was ist der Unterschied zwischen einer Schleife und eines Streams?
+
+* Unterschiedliche Programmierstile. Ein Stream verwendet funktionelle Programmierung.
+
+
+
+
+
+
+=======
 == 2023-12-21
 // contribution by Elias Just
 === Patterns
@@ -113,6 +139,7 @@ https://edufs.edu.htl-leonding.ac.at/moodle/course/view.php?id=4117#[Link zum Cl
 - Expected Result
 
 💡 Datenbankintegrität: **Zuverlässigkeit und Vertrauenswürdigkeit von Daten während ihres gesamten Lebenszyklus wird gewährleistet**.
+
 
 
 
