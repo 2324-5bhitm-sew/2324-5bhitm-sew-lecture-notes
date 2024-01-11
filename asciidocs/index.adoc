@@ -111,9 +111,6 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 
 
 
-
-
-=======
 == 2023-12-21
 // contribution by Elias Just
 === Patterns
@@ -142,4 +139,21 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 
 
 
+== 2024-01-11
 
+=== Übung
+
+* Erstellung einer Quarkus - App, mit einfachem REST-Service
+** Anzeige des Usernamen und möglichst aller Daten aus Profile
+
+** VErwendung von Rollen
+*** Variante 1: Rollen als Annotationen
+*** Variante 2: Rollen im Keycloak
+
+* Authentifizierung und Autorisierung über schuleigenen KEycloak und AD-Usern
+
+* Erstellung einer einfachen Angular-App
+
+* Authentifizierung und Autorisierung über schuleigenen KEycloak und AD-Usern
+
+* Termin nach Semesterferien
