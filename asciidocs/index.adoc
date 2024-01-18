@@ -158,11 +158,104 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 
 * Termin nach Semesterferien
 
-== 2024-01-18
+== 2024-01-18  (Thomas Spindler)
 
 === Qute
 
-=== Interfaces
+Quarkus Templating Engine
+
+* Template: Vorlage
+* Besonderheit: Java Fragmente in Template files
+
+*rendern*: zur Ausgabe vorbereiten
+
+=== Arten bei Panache auf die Daten zuzugreifen:
+
+Panache: Ein Layer über JPA
+
+2 Patterns:
+
+* Repository-pattern
+** Das Pattern, das wir aktuell bei allen unseren Projekten verwenden
+* Active Record pattern:
+** kein Repository, sämtliche Methoden in Entities, sowohl dynamisch als auch statisch
+
+=== GRPC
+
+Vorteile von GRPC:
+
+* Daten werden binär übertragen, dies spart Netzwerkbandbreite
+* Somit effizienter als REST
+
+Nachteile von GRPC:
+
+* Muss kompiliert werden
+* Requests sind nicht einfach so lesbar
+
+unterschied zwischen Graphql und REST: +
+REST ist Fischer mit einem großen Netz, Graphql fängt nur den Fisch, der benötigt wird
+
+==== Mutiny
+
+Zu Deutsch: Meuterei
+
+Mutiny is ein Stream von Daten.
+Hierbei gibt es 2 Arten:
+
+* Uni
+** Das Resultat ist genau 1 Ergebnis
+* Multi
+** Das Resultat sind mehrere Ergebnisse
+
+===  Multithreading & Concurrency:
+
+Es gibt mehrere multithreading konzepte in Java:
+
+* Runnable & Threads
+* Futures
+* OnCompletable
+* Executors
+* Virtual Threads
+
+Ein Prozessor hat mehrere Threads, somit können mehrere Prozesse parallel laufen. +
+Nachteil: Die Anzahl der Threads ist limitiert
+
+
+ExecutorService: Anzahl von Threads & der link:https://www.baeldung.com/java-thread-lifecycle[Lebenszyklus] dieser wird verwaltet
+
+Unterschied zwischen Future und Promise: keiner, ist nur ein anderer Name
+
+Was ist ein Pool? (allgemein): Pools sind meistens Maps; eine Ansammlung von Objekten
+
+Quarkus startet bereits bei jedem Request einen Thread +
+Mithilfe von der Annotation @RunOnVirtualThread kann konfiguriert werden, dass eingehende Requests nicht in neuen System-Threads laufen, sondern in virtuellen Threads
+
+==== Virtual Threads:
+
+* *Problem:* Die Anzahl von Betriebssystem-Threads sind limitiert, wenn diese voll belegt sind "ist es vorbei"
+* *Lösung:* Virtuelle Threads, die von mehreren runner Threads ausgeführt und verwaltet werden:
+
+image::java-virtual-threads-execution.png[]
+
+*Vorteil*: Extrem viele Threads können erstellt und verwendet werden, ohne das Betriebssystem unnötig zu belasten.
+
+* Race Condition: Mehrere Prozesse wollen auf dieselbe Resource zugreifen
+
+=== Collections in Java
+
+Welche Collections gibt es in Java:
+image:java-collecions-framework.png[]
+
+
+.Java 21 Collection Interfaces
+image:java-21-collection-interfaces.png[]
+
+Früher waren alle Collections gegen concurrency abgesichert, was diese langsamer machte.
+Da diese allerdings häufig verwendet werden, wurden Concurrent Collections in eigene Implementierungen ausgelagert
+
+Map: Arbeitet mit Key Value paren, wodurch diese sehr Nützlicht sind, und daher auch oft verwendet werden
+
+=== Interfaces (Prof. Thomas Stütz)
 
 .gibt es in Java nicht
 [plantuml,mehrfachvererbung,svg]
