@@ -1,12 +1,15 @@
 package at.htlleonding.airways.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.util.UUID;
+
+
+@NamedQuery(
+        name="Airplane.findAll",
+        query = "select a from Airplane a"
+)
 
 @Entity
 public class Airplane {
