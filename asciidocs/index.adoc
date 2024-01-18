@@ -146,7 +146,7 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 * Erstellung einer Quarkus - App, mit einfachem REST-Service
 ** Anzeige des Usernamen und möglichst aller Daten aus Profile
 
-** VErwendung von Rollen
+** Verwendung von Rollen
 *** Variante 1: Rollen als Annotationen
 *** Variante 2: Rollen im Keycloak
 
@@ -157,3 +157,53 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 * Authentifizierung und Autorisierung über schuleigenen KEycloak und AD-Usern
 
 * Termin nach Semesterferien
+
+== 2024-01-18
+
+=== Qute
+
+=== Interfaces
+
+.gibt es in Java nicht
+[plantuml,mehrfachvererbung,svg]
+----
+@startuml
+class Fahrzeug {
+  starte()
+}
+
+class Boot {
+  starte()
+}
+
+class Schwimmauto
+
+Fahrzeug <|-- Schwimmauto
+Boot <|-- Schwimmauto
+@enduml
+----
+
+
+[plantuml,einfachvererbung,svg]
+----
+@startuml
+class Fahrzeug {
+  brand
+  model
+  starte()
+}
+
+interface Boot {
+  schwimme()
+}
+
+class Schwimmauto {
+  schwimme()
+}
+
+Fahrzeug <|-- Schwimmauto
+Boot <|.. Schwimmauto
+@enduml
+----
+
+* Ein Interface ist wie ein Vertrag. Ein spezifisches Verhalten eines Interfaces (eine Fähigkeit) wird in einer Klasse implementiert.
