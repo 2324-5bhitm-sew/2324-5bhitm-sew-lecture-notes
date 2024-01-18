@@ -150,11 +150,11 @@ Was ist der Unterschied zwischen einer Schleife und eines Streams?
 *** Variante 1: Rollen als Annotationen
 *** Variante 2: Rollen im Keycloak
 
-* Authentifizierung und Autorisierung über schuleigenen KEycloak und AD-Usern
+* Authentifizierung und Autorisierung über schuleigenen Keycloak und AD-Usern
 
 * Erstellung einer einfachen Angular-App
 
-* Authentifizierung und Autorisierung über schuleigenen KEycloak und AD-Usern
+* Authentifizierung und Autorisierung über schuleigenen Keycloak und AD-Usern
 
 * Termin nach Semesterferien
 
